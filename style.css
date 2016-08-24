@@ -1,0 +1,544 @@
+body,
+html,
+main {
+  /* important */
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  min-width:320px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 300;
+  font-size: 12pt;
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    font-size: 12pt;
+  }
+}
+
+.cd-fixed-bg {
+  position: relative;
+  min-height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.cd-scrolling-bg {
+  min-height: 100%;
+}
+
+.cd-fixed-bg,
+.cd-scrolling-bg {
+  padding-top: 45px;
+}
+
+@media only screen and (min-width: 769px) {
+  .cd-fixed-bg,
+  .cd-scrolling-bg {
+    padding-top: 60px;
+  }
+}
+
+.cd-fixed-bg.section-1 {
+  background-image: url("images/home-page-image.jpg");
+}
+
+.cd-scrolling-bg.section-2 {
+  background-image: url("images/crumpled-paper-2048.jpg")
+}
+
+.cd-fixed-bg.section-3 {
+  background-image: url("images/our-services.jpg");
+  background-position: center left;
+}
+
+@media only screen and (min-width: 769px) {
+  .cd-fixed-bg.section-3 {
+    background-position: center center;
+  }
+}
+
+.cd-fixed-bg.section-4 {
+   background-image: url("images/contact-us.jpg")
+}
+
+.cd-container {
+  width: 100%;
+  float: left;
+}
+
+@media only screen and (min-width: 769px) {
+  .cd-container {
+    width: 50%;
+    float: left;
+  }
+}
+
+.cd-panel {
+  border: 1px #000;
+  background-color: rgba(140, 217, 225, 0.75);
+  padding: 10px 0 0 10px;
+  margin: 10px;
+}
+
+.cd-panel > * {
+  padding: 0 10px 10px 0;
+}
+
+@media only screen and (min-width: 769px) {
+  .cd-panel {
+    margin: 30px;
+    padding:10px;
+  }
+}
+
+.cd-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(209, 193, 141, 0.70);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: 2000;
+}
+
+.cd-header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cd-header div {
+  display: inline-block;
+}
+
+.cd-header #cd-logo {
+  margin: 5px 0 5px 5%;
+}
+
+@media only screen and (min-width: 1000px) {
+  .cd-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(209, 193, 141, 0.70);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    height: 70px;
+  }
+  .cd-header #cd-logo {
+    margin: 0 0 0 5%;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    width: 90%;
+    transform: translateY(-50%);
+  }
+  .cd-header #cd-logo img {
+    display: block;
+  }
+  /*Display 'show menu' link*/
+  .showmenu {
+    display: none;
+  }
+}
+
+
+/*Style 'show menu' label button and hide it by default*/
+
+#menu-button {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  left: auto;
+  bottom: auto;
+  text-decoration: none;
+  margin: 0 3px;
+  display: inline-block;
+  font-size: 20px;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 1px;
+  padding: 3px 6px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  cursor: default;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, 0.4) 0 1px, inset 0 20px 20px -10px white;
+}
+
+#showmenu:checked ~ #menu-button,
+#showmenu:checked ~ * #menu-button {
+  box-shadow: inset rgba(0, 0, 0, 0.4) 0 -5px 12px, inset rgba(0, 0, 0, 1) 0 1px 3px, rgba(255, 255, 255, 0.4) 0 1px;
+}
+
+
+/*Hide checkbox*/
+
+.cd-header #showmenu {
+  display: inline-block;
+}
+
+
+/*Show menu when invisible checkbox is checked*/
+
+#menu,
+#showmenu {
+  display: none;
+}
+
+#showmenu:checked ~ nav#menu,
+#showmenu:checked ~ * nav#menu {
+  display: block;
+}
+
+
+/*Make dropdown links appear inline*/
+
+#menu ul.is-visible {
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  transform: translateY(50px);
+}
+
+#menu a {
+  display: block;
+  font-weight: 600;
+  text-decoration: none;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 5%;
+  background: rgba(140, 217, 225, 0.7);
+  border-top: 1px solid #fff;
+  color: #fff;
+}
+
+#menu a:hover {
+  color: darkgray;
+}
+
+li.emergency {
+  color: #fff;
+  background: rgb(169, 51, 47);
+  padding: 5px;
+}
+
+
+/*Create vertical spacing*/
+
+#menu li {
+  margin-bottom: 1px;
+}
+
+
+/*Make all menu links full width*/
+
+#menu ul li,
+#menu li a {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+  #menu-button {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  #menu {
+    float: right;
+    margin-right: 5%;
+    width: auto;
+    height: auto;
+    background: none;
+    cursor: auto;
+    display: block;
+  }
+  #menu ul {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    position: static;
+    width: auto;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    line-height: 70px;
+  }
+  #menu ul.is-visible {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  #menu li {
+    display: inline-block;
+    margin-left: .5em;
+    margin-bottom: 0;
+    height: auto;
+    line-height: normal;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10pt;
+  }
+  #menu a {
+    display: inline-block;
+    background: transparent;
+    padding: .6em 1em;
+    border-top: none;
+    color: #fff;
+  }
+  /*Make all menu links full width*/
+  #menu ul li,
+  #menu li a {
+    width: auto;
+  }
+  .no-touch #menu a:hover {
+    color: #99a478;
+  }
+}
+
+aside {
+  float: left;
+  z-index: 100;
+  margin: 5px;
+}
+
+aside img {
+  padding: 2px;
+}
+
+aside a {
+  display: block;
+  font-size: 2.3em;
+}
+
+aside a:visited,
+aside a {
+  color: darkgray;
+}
+
+aside a:hover {
+  color: lightgray;
+}
+
+@media only screen and (min-width: 769px) {
+  aside {
+    margin-top: 20px;
+  }
+  aside img {
+    padding: 5px;
+  }
+}
+
+p {
+  margin-top: 1em;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+h1 {
+  font-size: 18pt;
+  color: #fff;
+  background: rgba(140, 217, 225, 0.4);
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  width: 50%;
+  max-width: 1000px;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+
+h1.error {
+  background: rgba(169, 51, 47, 0.75)
+}
+#arrow {
+  position: absolute;
+  left: 50%;
+  right: auto;
+  bottom: 10px;
+  top: auto;
+  transform: translateX(-50%);
+}
+
+#services-arrow {
+  
+}
+
+h2 {
+  color: #fff;
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+h3 {
+  margin-left: 0;
+  margin-top: 5px;
+  margin-right: auto;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+h4 {
+  color: #fff;
+  margin-left: 0;
+  margin-top: 1em;
+  font-size: 16pt;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 769px) {
+  h1 {
+    font-size: 24pt;
+  }
+  h2 {
+    font-size: 24pt;
+  }
+  h3{
+  margin-left: 0;
+  margin-top: 5px;
+  margin-right: auto;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 
+}
+  h4 {
+    font-size: 16pt;
+  }
+  
+  h4 p{margin:0;}
+}
+
+ul.services {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 1em;
+}
+
+ul.services li {
+  margin-top: .2em;
+}
+
+ul.hours {
+  margin-top: 1em;
+}
+
+ul.hours li {
+  margin-top: .2em;
+}
+
+.cd-panel > .profiles {
+  padding: 10px 0 0 0;
+  margin: 0;
+}
+
+.profiles > * {
+  padding: 0 10px 10px 0;
+}
+
+.profile img {
+  width: 100%;
+}
+
+.profile p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.cd-panel > form {
+  padding: 0 0 10px 0;
+}
+
+form label {
+  display: block;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+}
+
+.info {
+  padding-right: 10px;
+}
+
+form button {
+  width: 110px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: rgb(209, 193, 141);
+  font-size: 12pt;
+}
+
+@media only screen and (min-width: 769px) {
+  form button {
+    font-size: 12pt;
+  }
+}
+
+#map {
+  width: 100%;
+  height: 150px;
+}
+
+@media only screen and (min-width: 769px) {
+  #map {
+    height: 300px;
+  }
+}
+
+footer {
+  background: rgba(209, 193, 141, 0.50);
+  padding: 0;
+  width: 100%;
+}
+
+footer div {
+  padding: 5px;
+}
+
+footer .left {
+  text-align: left;
+}
+
+footer .right {
+  text-align: left;
+}
+
+@media screen and (min-width: 35.5em) {
+  footer .right {
+    text-align: right;
+  }
+}
+
+.clear {
+  clear: both;
+  height: 0;
+}
