@@ -23,6 +23,8 @@
     } catch (e) {}
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="js/onepage/onepagescroll.js"></script>
+  <link href='js/onepage/onepage-scroll.css' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -43,6 +45,7 @@
   </header>
 
   <main>
+    <section>
     <div id="home" class="cd-fixed-bg section-1">
     </div>
 
@@ -55,9 +58,11 @@
     </div>
 
     <div class="clear"></div>
+    </section>
 
     <!--Who we are-->
 
+    <section>
     <div id="who" class="cd-scrolling-bg section-2">
       <div class="cd-container">
         <div class="cd-panel">
@@ -79,21 +84,25 @@
 
           <img src="images/Phil-Passport-Pic%20100px.jpg">
         </div>
+        -->
       </div>
     </div>
--->
+    </section>
 
         <!--Services-->
 
+    <section>
         <div id="services" class="cd-fixed-bg section-3">
         </div>
 
-        <!--
+<!--
     <div id="services-arrow">
       <a href="#who"><img src="images/arrow-blue.png" alt="arrow"></a>
     </div>
 -->
+      </section>
 
+      <section>
         <div id="about" class="cd-scrolling-bg section-2">
           <div class="cd-container">
             <div class="cd-panel">
@@ -106,7 +115,8 @@
             </div>
           </div>
         </div>
-
+      </section>
+      <section>
         <div id="editing" class="cd-scrolling-bg section-3">
           <div class="cd-container">
             <div class="cd-panel">
@@ -119,8 +129,10 @@
             </div>
           </div>
         </div>
+      </section>
         <!--Contact us-->
 
+      <section>
         <div class="clear"></div>
         <div id="contact" class="cd-fixed-bg section-4">
           <div class="cd-container">
@@ -177,6 +189,7 @@
           </div>
           <div class="clear"></div>
         </div>
+      </section>
 
         <!--Footer-->
         <footer>
@@ -199,6 +212,7 @@
         return true;
       })
     });
+    onePageScroll("main");
   </script>
 </body>
 
