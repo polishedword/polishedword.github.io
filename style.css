@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+
 body,
 html,
 main {
@@ -50,7 +52,7 @@ body {
 }
 
 .cd-fixed-bg.section-1 {
-  background-image: url("images/home-page-image.jpg");
+  background-image: url("images/Unleash-your-creative-1.jpg");
 }
 
 .cd-scrolling-bg.section-2 {
@@ -355,19 +357,24 @@ p {
 }
 
 h1 {
+  font-family: "Marck Script";
   font-size: 18pt;
-  color: #fff;
-  background: rgba(140, 217, 225, 0.4);
+  color: #c8c8c8;
+/*  background: rgba(255, 255, 255, 0.3);*/
   padding: 10px;
   position: absolute;
   left: 50%;
   top: 50%;
   bottom: auto;
   right: auto;
-  width: 50%;
+  width: 90%;
   max-width: 1000px;
   transform: translateX(-50%) translateY(-50%);
   text-align: center;
+}
+
+h1 img {
+  width: 100%;
 }
 
 h1.error {
@@ -381,6 +388,11 @@ h1.error {
   bottom: 10px;
   top: auto;
   transform: translateX(-50%);
+  color: white;
+}
+
+#arrow a:visited, #arrow a:hover {
+  color: white;
 }
 
 #services-arrow {}
