@@ -10,5 +10,3 @@ jekyll serve
 ```
 
 Then navigate to [here](http://localhost:4000/).
-
-
