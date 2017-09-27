@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+
 body,
 html,
 main {
@@ -5,7 +7,7 @@ main {
   height: 100%;
   padding: 0;
   margin: 0;
-  min-width:320px;
+  min-width: 320px;
 }
 
 * {
@@ -39,6 +41,7 @@ body {
 .cd-fixed-bg,
 .cd-scrolling-bg {
   padding-top: 45px;
+  padding-bottom: 5px;
 }
 
 @media only screen and (min-width: 769px) {
@@ -49,11 +52,12 @@ body {
 }
 
 .cd-fixed-bg.section-1 {
-  background-image: url("images/home-page-image.jpg");
+  background-image: url("images/star-field.jpg");
 }
 
 .cd-scrolling-bg.section-2 {
-  background-image: url("images/crumpled-paper-2048.jpg")
+  background-image: url("images/crumpled-paper-2048.jpg");
+  background-repeat: repeat;
 }
 
 .cd-fixed-bg.section-3 {
@@ -68,12 +72,11 @@ body {
 }
 
 .cd-fixed-bg.section-4 {
-   background-image: url("images/contact-us.jpg")
+  background-image: url("images/contact-us.jpg")
 }
 
 .cd-container {
   width: 100%;
-  float: left;
 }
 
 @media only screen and (min-width: 769px) {
@@ -92,12 +95,13 @@ body {
 
 .cd-panel > * {
   padding: 0 10px 10px 0;
+  margin: 0;
 }
 
 @media only screen and (min-width: 769px) {
   .cd-panel {
     margin: 30px;
-    padding:10px;
+    padding: 10px;
   }
 }
 
@@ -353,24 +357,30 @@ p {
 }
 
 h1 {
+  font-family: "Marck Script";
   font-size: 18pt;
-  color: #fff;
-  background: rgba(140, 217, 225, 0.4);
+  color: #c8c8c8;
+/*  background: rgba(255, 255, 255, 0.3);*/
   padding: 10px;
   position: absolute;
   left: 50%;
   top: 50%;
   bottom: auto;
   right: auto;
-  width: 50%;
+  width: 90%;
   max-width: 1000px;
   transform: translateX(-50%) translateY(-50%);
   text-align: center;
 }
 
+h1 img {
+  width: 100%;
+}
+
 h1.error {
   background: rgba(169, 51, 47, 0.75)
 }
+
 #arrow {
   position: absolute;
   left: 50%;
@@ -378,11 +388,14 @@ h1.error {
   bottom: 10px;
   top: auto;
   transform: translateX(-50%);
+  color: white;
 }
 
-#services-arrow {
-  
+#arrow a:visited, #arrow a:hover {
+  color: white;
 }
+
+#services-arrow {}
 
 h2 {
   color: #fff;
@@ -395,14 +408,6 @@ h2 {
 }
 
 h3 {
-  margin-left: 0;
-  margin-top: 5px;
-  margin-right: auto;
-  margin-bottom: 5px;
-  color: #fff;
-}
-
-h4 {
   color: #fff;
   margin-left: 0;
   margin-top: 1em;
@@ -417,19 +422,20 @@ h4 {
   h2 {
     font-size: 24pt;
   }
-  h3{
-  margin-left: 0;
-  margin-top: 5px;
-  margin-right: auto;
-  margin-bottom: 5px;
-  color: #fff;
-  font-size: 
-}
+  h3 {
+    margin-left: 0;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size:
+  }
   h4 {
     font-size: 16pt;
   }
-  
-  h4 p{margin:0;}
+  h4 p {
+    margin: 0;
+  }
 }
 
 ul.services {
