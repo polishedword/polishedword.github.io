@@ -2,19 +2,11 @@
 ---
 
 <div class="clear"></div>
-<div id="contact" class="cd-fixed-bg">
+<div id="contact" class="cd-scrolling-bg">
   <div class="cd-container">
     <div class="cd-panel">
       <h2>Contact us</h2>
-      <p>If you are interested in engaging our services for proofreading or editing, e-mail [info@polishedword.com.au] for a free quote.</p>
-    </div>
-  </div>
-
-  <!--Enquiry Form-->
-  <div class="cd-container">
-    <div class="cd-panel">
-      <h2>Enquiries</h2>
-      <form id="contact" method="post" action="forms/contact.php">
+      <form id="contact-form" method="post" action="forms/contact.php">
         <ul class="pure-g">
           <li class="pure-u-1 pure-u-sm-1-2">
             <div class="info">
