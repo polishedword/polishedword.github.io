@@ -1,0 +1,14 @@
+encoding: UTF-8
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude:
+  - CNAME
+
+#Ensure capatibility with Github Pages
+safe: true
+
+collections:
+  - sections
+  
