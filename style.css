@@ -56,7 +56,7 @@ body {
 }
 
 #who {
-  background-image: url("images/white-linen-paper-texture.jpg");
+  background-image: url("images/crumpled-paper-2048.jpg");
   background-repeat: repeat;
 }
 
@@ -72,7 +72,8 @@ body {
 }
 
 #contact {
-  background-image: url("images/contact-us.jpg")
+  background-image: url("images/contact-stars.jpg");
+    background-position: bottom left;
 }
 
 .cd-container {
