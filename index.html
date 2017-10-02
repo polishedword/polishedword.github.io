@@ -30,6 +30,8 @@
 </head>
 
 <body>
+  {% assign items = site.sections %}
+  
   <input type="checkbox" id="showmenu" />
 
   <!--Header section-->
@@ -40,14 +42,16 @@
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#who">Who we are</a></li>
-        <li><a href="#services">Our services</a></li>
-        <li><a href="#contact">Contact us</a>
+        <li><a href="#writing">Writing</a></li>
+        <li><a href="#editing">Editing</a></li>
+        <li><a href="#design">Design</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    
+  <div id="sections">
   {% assign items = site.sections %}
   {% for item in items %}
     <section>
@@ -67,6 +71,7 @@
         </div>
       </div>
     </footer>
+  </div>
   </main>
   <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
   <script type="application/javascript">
@@ -76,7 +81,7 @@
         return true;
       })
     });
-    onePageScroll("main");
+    onePageScroll("#sections");
   </script>
 </body>
 

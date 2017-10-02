@@ -20,6 +20,7 @@ body {
 }
 
 @media only screen and (min-width: 769px) {
+  }
   body {
     font-size: 12pt;
   }
@@ -62,12 +63,13 @@ body {
 
 #writing {
   background-image: url("images/typewriter-2048.jpg");
-  background-position: center left;
+  background-position: right -500px center;
 }
 
 @media only screen and (min-width: 769px) {
   #writing {
-    background-position: center center;
+    background-position: 95% center;
+    background-position: right -100px center;
   }
 }
 
@@ -129,12 +131,12 @@ body {
   margin: 5px 0 5px 5%;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 769px) {
   .cd-header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 50%;
     background: rgba(0, 0, 0, 0.70);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     height: 60px;
@@ -252,7 +254,7 @@ li.emergency {
   width: 100%;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 769px) {
   #menu-button {
     display: none;
   }
@@ -260,8 +262,9 @@ li.emergency {
     display: block;
   }
   #menu {
-    float: right;
-    margin-right: 5%;
+    float: left;
+    margin-left: 30px;
+    padding-left: 10px;
     width: auto;
     height: auto;
     background: none;
