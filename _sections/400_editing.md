@@ -1,7 +1,7 @@
 ---
 ---
 
-<div id="editing" class="cd-scrolling-bg section-3">
+<div id="editing" class="cd-scrolling-bg">
   <div class="cd-container">
     <div class="cd-panel">
       <h2>Editing &amp; Proofreading</h2>

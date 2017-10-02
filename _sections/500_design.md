@@ -1,7 +1,7 @@
 ---
 ---
 
-<div id="design" class="cd-scrolling-bg section-4">
+<div id="design" class="cd-scrolling-bg">
   <div class="cd-container">
     <div class="cd-panel">
       <h2>Design</h2>

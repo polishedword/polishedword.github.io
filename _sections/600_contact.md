@@ -2,7 +2,7 @@
 ---
 
 <div class="clear"></div>
-<div id="contact" class="cd-fixed-bg section-4">
+<div id="contact" class="cd-fixed-bg">
   <div class="cd-container">
     <div class="cd-panel">
       <h2>Contact us</h2>

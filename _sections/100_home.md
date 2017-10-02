@@ -1,7 +1,7 @@
 ---
 ---
 
-<div id="home" class="cd-fixed-bg section-1"></div>
+<div id="home" class="cd-fixed-bg"></div>
 
 <h1><img src="images/Polished-Word-Logo-Silver-v2.png"></h1>
 
