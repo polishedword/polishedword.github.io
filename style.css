@@ -17,6 +17,7 @@ main {
 body {
   font-weight: 300;
   font-size: 12pt;
+  color: #c8c8c8
 }
 
 @media only screen and (min-width: 769px) {
@@ -56,12 +57,12 @@ body {
 }
 
 .cd-scrolling-bg.section-2 {
-  background-image: url("images/crumpled-paper-2048.jpg");
+  background-image: url("images/white-linen-paper-texture.jpg");
   background-repeat: repeat;
 }
 
 .cd-fixed-bg.section-3 {
-  background-image: url("images/our-services.jpg");
+  background-image: url("images/typewriter.jpg");
   background-position: center left;
 }
 
@@ -88,7 +89,7 @@ body {
 
 .cd-panel {
   border: 1px #000;
-  background-color: rgba(140, 217, 225, 0.75);
+  background-color: rgba(255, 255, 255, 0.4);
   padding: 10px 0 0 10px;
   margin: 10px;
 }
@@ -135,9 +136,9 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(209, 193, 141, 0.70);
+    background: rgba(0,  0, 0, 0.70);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    height: 70px;
+    height: 60px;
   }
   .cd-header #cd-logo {
     margin: 0 0 0 5%;
