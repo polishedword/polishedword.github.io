@@ -6,18 +6,21 @@
   <div class="cd-container">
     <div class="cd-panel">
       <h2>Contact us</h2>
-      <form id="contact-form" method="post" action="forms/contact.php">
+      <form id="contact-form" method="post" action="https://formspree.io/info@polishedword.com.au">
+        <input type="hidden" name="_next" value="//polishedword.com.au/thanks.html">
+        <input type="hidden" name="_subject" value="Website Query" />
+        <input type="hidden" name="_format" value="plain" />
         <ul class="pure-g">
           <li class="pure-u-1 pure-u-sm-1-2">
             <div class="info">
               <label>First name</label>
-              <input type="text" name="firstName">
+              <input type="text" name="first">
             </div>
           </li>
           <li class="pure-u-1 pure-u-sm-1-2">
             <div class="info">
               <label>Last name</label>
-              <input type="text" name="lastName">
+              <input type="text" name="last">
             </div>
           </li>
           <li class="pure-u-1 pure-u-sm-1-2">
