@@ -1,0 +1,16 @@
+---
+---
+
+<div id="editing" class="cd-scrolling-bg section-3">
+  <div class="cd-container">
+    <div class="cd-panel">
+      <h2>Editing &amp; Proofreading</h2>
+      
+      Whether you’ve written a 100,000 word novel or a 50 word brochure, it’s essential that your work have one final polish—and that’s precisely our specialty.
+
+      Perhaps you need a full structural edit, an overhaul from the ground up… Or maybe you just need another set of eyes to spot any of those little errors of punctuation and grammar that inevitably sneak in to any piece of writing.
+      
+      We’d love to help. [Get in touch](#contact) today for a full quote.
+    </div>
+  </div>
+</div>
