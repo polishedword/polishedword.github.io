@@ -2,14 +2,16 @@
 sort_order: 200
 ---
 
-<div id="who" class="cd-scrolling-bg">
+<div id="about" class="cd-scrolling-bg">
   <div class="cd-container">
     <div class="cd-panel">
-      <h2>Who we are</h2>
+      <h2>About us</h2>
 
       <p>Polished Word is a professional writing, editing, proofreading and design business based in Brisbane, Australia.</p>
+      
+      <p>Whether you are creating a brochure, finishing your thesis, publishing a novel or simply updating a webpage, we're ready and able to add the final polish to your work.</p>
 
-      <p>We are committed to providing high quality service with speed and efficiency. Contact us today for your free quote.</p>
+      <p>We are committed to providing high quality service with speed and efficiency. <a href="#contact">Contact us</a> today to learn how we can quickly and professionally enhance or develop your next masterpiece.</p>
     </div>
 
     <!--

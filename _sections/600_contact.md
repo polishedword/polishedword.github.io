@@ -49,4 +49,11 @@
     </div>
   </div>
   <div class="clear"></div>
+  <footer>
+      <div class="footer">
+          &copy; 2016 Polished Word |
+          <a href="#">Privacy Policy</a> |
+          <a href="#">Terms Of Use</a>
+      </div>
+    </footer>
 </div>

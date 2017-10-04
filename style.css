@@ -16,7 +16,7 @@ main {
 body {
   font-weight: 300;
   font-size: 12pt;
-  color: #c8c8c8
+  color: black;
 }
 
 @media only screen and (min-width: 769px) {
@@ -56,9 +56,13 @@ body {
   background-image: url("images/star-field-2048.jpg");
 }
 
-#who {
+#about {
   background-image: url("images/crumpled-paper-2048.jpg");
   background-repeat: repeat;
+}
+
+#about .cd-panel {
+  background-color: inherit;
 }
 
 #writing {
@@ -66,10 +70,21 @@ body {
   background-position: right -500px center;
 }
 
+#writing .cd-panel {
+  background-color: rgba(255, 255, 255, 0.8)
+}
+
 #contact {
   background-image: url("images/contact-stars.jpg");
     background-position: 95% center;
     background-position: right 0px center;
+    background-size: cover;
+}
+
+#contact input,
+#contact textarea,
+#contact button {
+  color: black;
 }
 
 @media only screen and (min-width: 769px) {
@@ -104,7 +119,7 @@ body {
 
 .cd-panel {
   border: 1px #000;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 10px 0 0 10px;
   margin: 10px;
 }
@@ -416,7 +431,7 @@ h1.error {
 #services-arrow {}
 
 h2 {
-  color: #fff;
+  color: #5f6464;
   margin-left: 0px;
   margin-top: 10px;
   margin-right: auto;
@@ -539,9 +554,12 @@ form button {
 }
 
 footer {
-  background: rgba(209, 193, 141, 0.50);
+  background: rgba(0, 0, 0, 1);
   padding: 0;
   width: 100%;
+  font-size: 10px;
+  position: absolute;
+  bottom: 0;
 }
 
 footer div {
