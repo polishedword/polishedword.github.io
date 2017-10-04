@@ -1,7 +1,7 @@
 ---
 ---
 
-<div id="home" class="cd-fixed-bg"></div>
+<div id="home" class="cd-scrolling-bg"></div>
 
 <h1><img src="images/Polished-Word-Logo-Silver-v2.png"></h1>
 

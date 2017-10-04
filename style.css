@@ -66,16 +66,29 @@ body {
   background-position: right -500px center;
 }
 
+#contact {
+  background-image: url("images/contact-stars.jpg");
+    background-position: 95% center;
+    background-position: right 0px center;
+}
+
 @media only screen and (min-width: 769px) {
+  #home {
+    background-position: 95% center;
+    background-position: right 0px center;
+    background-size: cover;
+  }
+
   #writing {
     background-position: 95% center;
     background-position: right -100px center;
   }
-}
 
-#contact {
-  background-image: url("images/contact-stars.jpg");
-    background-position: bottom left;
+  #contact {
+    background-position: 95% center;
+    background-position: right 0px center;
+    background-size: cover;
+  }
 }
 
 .cd-container {
@@ -225,7 +238,7 @@ body {
   height: 50px;
   line-height: 50px;
   padding-left: 5%;
-  background: rgba(140, 217, 225, 0.7);
+  background: rgba(0, 0, 0, 1);
   border-top: 1px solid #fff;
   color: #fff;
 }
@@ -302,7 +315,7 @@ li.emergency {
     line-height: normal;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 10pt;
+    font-size: 7pt;
   }
   #menu a {
     display: inline-block;
