@@ -1,8 +1,7 @@
 ---
+section: editing
 ---
-
-<div id="editing" class="cd-scrolling-bg">
-  <div class="cd-container">
+<div class="cd-container">
   <div class="cd-panel">
     <h2>Editing &amp; Proofreading</h2>
 
@@ -12,6 +11,5 @@
 
     <p>We’d love to help. <a href="#contact">Get in touch</a> today for a full quote.</p>
       
-  </div>
   </div>
 </div>
