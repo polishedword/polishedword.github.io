@@ -1,6 +1,6 @@
 ---
 ---
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -25,8 +25,7 @@
     } catch (e) {}
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script type="text/javascript" src="js/onepage/onepagescroll.js"></script>
-  <link href='js/onepage/onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="js/fullPage/jquery.fullPage.css" />
 </head>
 
 <body>
@@ -51,16 +50,17 @@
   </header>
 
   <main>
-  <div id="sections">
+  <div id="fullpage">
   {% assign items = site.sections %}
   {% for item in items %}
-    <section>
+    <div class="section">
       {{ item.content }}
-    </section>
+    </div>
   {% endfor %}
   </div>
   </main>
   <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/fullPage/jquery.fullPage.js"></script>
   <script type="application/javascript">
     $(document).ready(function () {
       $("#menu a").click(function () {
@@ -68,7 +68,9 @@
         return true;
       })
     });
-    onePageScroll("#sections");
+    $(document).ready(function() {
+	 $('#fullpage').fullpage();
+    });
   </script>
 </body>
 
