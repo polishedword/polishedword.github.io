@@ -56,9 +56,11 @@
     <div class="section">
       <div id="{{ item.section }}" class="cd-scrolling-bg">
         {{ item.content }}
+        {% if forloop.last == false %}
         <div class="next-section">
           <a href="#"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
         </div>
+        {% endif %}
       </div>
     </div>
   {% endfor %}

@@ -74,6 +74,10 @@ body {
   background-color: rgba(255, 255, 255, 0.8)
 }
 
+#editing .next-section a, #editing .next-section a:visited, #editing .next-section a:hover, #editing .next-section a:active {
+  color: black;
+}
+
 #contact {
   background-image: url("images/contact-stars.jpg");
     background-position: 95% center;
@@ -414,6 +418,10 @@ h1.error {
   right: auto;
   bottom: 10px;
   top: auto;
+  color: white;
+}
+
+.next-section a, .next-section a:visited, .next-section a:hover, .next-section a:active {
   color: white;
 }
 
