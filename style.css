@@ -451,6 +451,7 @@ h3 {
 @media only screen and (min-width: 769px) {
   h1 {
     font-size: 24pt;
+    width: 450px;
   }
   h2 {
     font-size: 24pt;
