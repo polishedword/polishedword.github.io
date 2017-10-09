@@ -65,8 +65,10 @@ body {
 }
 
 #writing {
-  background-image: url("images/typewriter-2048.jpg");
-  background-position: right -500px center;
+  background-image: url("images/galaxy-2048.jpg");
+    background-position: 95% center;
+    background-position: right 0px center;
+    background-size: cover;
 }
 
 #writing .cd-panel {
@@ -80,14 +82,10 @@ body {
     background-size: cover;
 }
 
-#editing .next-section a, #editing .next-section a:visited, #editing .next-section a:hover, #editing .next-section a:active {
-  color: black;
-}
-
 #design {
   background-image: url("images/sky-bowl-2048.jpg");
     background-position: 95% center;
-    background-position: right 0px center;
+    background-position: center center;
     background-size: cover;
 }
 
@@ -117,7 +115,7 @@ body {
     background-size: cover;
   }
 
-  #about .cd-container {
+  #about .cd-container, #writing .cd-container, #editing .cd-container, #design .cd-container, #contact .cd-container {
     width: 50%;
     position: absolute;
     left: 50%;
@@ -126,7 +124,7 @@ body {
 
   #writing {
     background-position: 95% center;
-    background-position: right -100px center;
+    background-position: right 0px center;
   }
 
   #editing {
@@ -318,6 +316,10 @@ li.emergency {
 
 /*Make all menu links full width*/
 
+#menu li a {
+  padding: 15px;
+}
+
 #menu ul li,
 #menu li a {
   width: 100%;
@@ -366,7 +368,7 @@ li.emergency {
     font-weight: bold;
     font-size: 7pt;
   }
-  #menu a {
+  #menu li a {
     display: inline-block;
     background: transparent;
     padding: .6em 1em;
