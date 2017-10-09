@@ -39,22 +39,18 @@
     <!-- 1. Nav -->
     <nav id="menu">
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#writing">Writing</a></li>
-        <li><a href="#editing">Editing</a></li>
-        <li><a href="#design">Design</a></li>
-        <li><a href="#contact">Contact</a></li>
+      {% for item in items %}
+        <li><a href="#{{ item.section }}" data-index="{{ forloop.index }}">{{ item.label }}</a></li>
+      {% endfor %}
       </ul>
     </nav>
   </header>
 
   <main>
   <div id="fullpage">
-  {% assign items = site.sections %}
   {% for item in items %}
-    <div class="section">
-      <div id="{{ item.section }}" class="cd-scrolling-bg">
+    <div class="section" id="{{ item.section }}">
+      <div class="cd-scrolling-bg">
         {{ item.content }}
         {% if forloop.last == false %}
         <div class="next-section">
@@ -74,9 +70,19 @@
         $("#showmenu").prop("checked", false);
         return true;
       })
-      $('#fullpage').fullpage();
+      $('#fullpage').fullpage({
+//        anchors: [{% for item in items %}'{{ item.section }}'{% if forloop.last == false %},{% endif %}{% endfor %}],
+        lockAnchors: false
+      });
       $('.next-section a').click(function() {
         $.fn.fullpage.moveSectionDown();
+        return false;
+      })
+      $('#menu a').click(function() {
+        var index = $(this).data("index");
+        if (index) {
+          $.fn.fullpage.moveTo(index);
+        }
         return false;
       })
     });

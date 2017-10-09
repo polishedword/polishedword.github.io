@@ -1,5 +1,6 @@
 ---
 section: contact
+label: Contact
 ---
 <div class="cd-container">
   <div class="cd-panel">

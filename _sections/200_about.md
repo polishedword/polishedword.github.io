@@ -1,5 +1,6 @@
 ---
 section: about
+label: About
 ---
 
 <div class="cd-container">

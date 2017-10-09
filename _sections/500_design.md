@@ -1,5 +1,6 @@
 ---
 section: design
+label: Design
 ---
 <div class="cd-container">
   <div class="cd-panel">

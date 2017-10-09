@@ -1,5 +1,6 @@
 ---
 section: editing
+label: Editing
 ---
 <div class="cd-container">
   <div class="cd-panel">
