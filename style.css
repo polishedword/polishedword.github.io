@@ -20,7 +20,6 @@ body {
 }
 
 @media only screen and (min-width: 769px) {
-  }
   body {
     font-size: 12pt;
   }
@@ -57,12 +56,12 @@ body {
 }
 
 #about {
-  background-image: url("images/crumpled-paper-2048.jpg");
+  background-image: url("images/dark_spot_background.jpg");
   background-repeat: repeat;
 }
 
 #about .cd-panel {
-  background-color: inherit;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 #writing {
@@ -74,12 +73,26 @@ body {
   background-color: rgba(255, 255, 255, 0.8)
 }
 
+#editing {
+  background-image: url("images/dark_spot_background.jpg");
+    background-position: 95% center;
+    background-position: right 0px center;
+    background-size: cover;
+}
+
 #editing .next-section a, #editing .next-section a:visited, #editing .next-section a:hover, #editing .next-section a:active {
   color: black;
 }
 
+#design {
+  background-image: url("images/sky-bowl-2048.jpg");
+    background-position: 95% center;
+    background-position: right 0px center;
+    background-size: cover;
+}
+
 #contact {
-  background-image: url("images/contact-stars.jpg");
+  background-image: url("images/dark_spot_background.jpg");
     background-position: 95% center;
     background-position: right 0px center;
     background-size: cover;
@@ -91,6 +104,12 @@ body {
   color: black;
 }
 
+@media only screen and (max-width: 769px) and (min-width: 376px) {
+  #home h1 {
+    width: 65%;
+  }
+}
+
 @media only screen and (min-width: 769px) {
   #home {
     background-position: 95% center;
@@ -98,9 +117,26 @@ body {
     background-size: cover;
   }
 
+  #about .cd-container {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   #writing {
     background-position: 95% center;
     background-position: right -100px center;
+  }
+
+  #editing {
+    background-position: 95% center;
+    background-position: right 0px center;
+  }
+
+  #design {
+    background-position: 95% center;
+    background-position: right 0px center;
   }
 
   #contact {
@@ -453,7 +489,7 @@ h3 {
 @media only screen and (min-width: 769px) {
   h1 {
     font-size: 24pt;
-    width: 450px;
+    width: 300px;
   }
   h2 {
     font-size: 24pt;
