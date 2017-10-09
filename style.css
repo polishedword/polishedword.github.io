@@ -52,7 +52,10 @@ body {
 }
 
 #home {
-  background-image: url("images/star-field-2048.jpg");
+  background-image: url("images/stars-horizon-2048.jpg");
+    background-position: 95% center;
+    background-position: center bottom;
+    background-size: cover;
 }
 
 #about {
@@ -111,7 +114,7 @@ body {
 @media only screen and (min-width: 769px) {
   #home {
     background-position: 95% center;
-    background-position: right 0px center;
+    background-position: center bottom;
     background-size: cover;
   }
 
@@ -601,6 +604,11 @@ footer {
   font-size: 10px;
   position: absolute;
   bottom: 0;
+  color: white;
+}
+
+footer a, footer a:hover, footer a:visited, footer a:active {
+  color: white;
 }
 
 footer div {
