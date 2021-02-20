@@ -5,7 +5,7 @@ label: Contact
 <div class="cd-container">
   <div class="cd-panel">
     <h2>Contact us</h2>
-    <form id="contact-form" method="post" action="https://formspree.io/info@polishedword.com">
+    <form id="contact-form" method="post" action="https://formspree.io/philp@polishedword.com">
       <input type="hidden" name="_next" value="//polishedword.com/thanks.html">
       <input type="hidden" name="_subject" value="Website Query" />
       <input type="hidden" name="_format" value="plain" />
