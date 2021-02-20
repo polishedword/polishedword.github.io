@@ -5,8 +5,8 @@ label: Contact
 <div class="cd-container">
   <div class="cd-panel">
     <h2>Contact us</h2>
-    <form id="contact-form" method="post" action="https://formspree.io/info@polishedword.com.au">
-      <input type="hidden" name="_next" value="//polishedword.com.au/thanks.html">
+    <form id="contact-form" method="post" action="https://formspree.io/info@polishedword.com">
+      <input type="hidden" name="_next" value="//polishedword.com/thanks.html">
       <input type="hidden" name="_subject" value="Website Query" />
       <input type="hidden" name="_format" value="plain" />
       <ul class="pure-g">
