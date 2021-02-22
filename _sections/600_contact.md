@@ -5,8 +5,7 @@ label: Contact
 <div class="cd-container">
   <div class="cd-panel">
     <h2>Contact us</h2>
-    <form id="contact-form" method="post" action="https://formspree.io/philp@polishedword.com">
-      <input type="hidden" name="_next" value="//polishedword.com/thanks.html">
+    <form id="contact-form" method="post" action="https://formspree.io/f/xgepbbkv">
       <input type="hidden" name="_subject" value="Website Query" />
       <input type="hidden" name="_format" value="plain" />
       <ul class="pure-g">
@@ -25,7 +24,7 @@ label: Contact
         <li class="pure-u-1 pure-u-sm-1-2">
           <div class="info">
             <label>Email</label>
-            <input type="text" name="email">
+            <input type="text" name="_replyto">
           </div>
         </li>
         <li class="pure-u-1 pure-u-sm-1-2">
